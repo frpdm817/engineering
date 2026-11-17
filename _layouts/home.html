@@ -14,7 +14,7 @@ layout: default
   <li>
     <a class="post-card" href="{{ post.url }}">
       <div>
-        <h2>{{ post.title }}</h2>
+        <h2>{{ post.title | escape }}</h2>
         <time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=post.lang %}</time>
       </div>
       <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>

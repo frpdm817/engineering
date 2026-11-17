@@ -60,7 +60,8 @@ a { color: var(--accent); }
   text-decoration: none;
   margin: 0 0 12px;
 }
-.back:hover, .back:focus-visible { color: var(--accent); outline: none; }
+.back:hover, .back:focus-visible { color: var(--accent); }
+.back:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 .site-title {
   display: block;
   font-family: Fraunces, Georgia, serif;
@@ -76,7 +77,8 @@ a { color: var(--accent); }
   color: var(--text);
   text-decoration: none;
 }
-.site-title-link:hover, .site-title-link:focus-visible { color: var(--accent); outline: none; }
+.site-title-link:hover, .site-title-link:focus-visible { color: var(--accent); }
+.site-title-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
 .intro {
   font-size: 18px;
   color: var(--muted);
@@ -130,8 +132,8 @@ a { color: var(--accent); }
 .post-card:hover, .post-card:focus-visible {
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
-  outline: none;
 }
+.post-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .post-card:hover::before, .post-card:focus-visible::before { transform: scaleY(1); }
 .post-card h2 {
   font-family: Fraunces, Georgia, serif;
@@ -237,7 +239,8 @@ footer {
   border-radius: 8px;
   transition: color .2s ease, background .2s ease;
 }
-.lang a:hover, .lang a:focus-visible { color: var(--text); background: var(--line); outline: none; }
+.lang a:hover, .lang a:focus-visible { color: var(--text); background: var(--line); }
+.lang a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .lang a[aria-current="page"] { color: var(--text); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
 
 .lang .flag { display: block; width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .12); }
