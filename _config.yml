@@ -2,6 +2,7 @@ title: Engineering
 description: Notes on software, systems and the craft of building things.
 url: https://engineering.fabiopereira.name
 permalink: /:year/:month/:day/:title/
+timezone: UTC
 
 # Not part of the site output.
 exclude:

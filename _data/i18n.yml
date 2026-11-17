@@ -5,6 +5,7 @@ languages: [en, es, pt]
 en:
   name: English
   home: /
+  home_link: /?lang=en   # links to the English home from other pages; plain / would trigger the cookie redirect
   title: Engineering
   description: Notes on software, systems and the craft of building things.
   hub_url: https://blog.fabiopereira.name/?lang=en
@@ -18,6 +19,7 @@ en:
 es:
   name: Español
   home: /es/
+  home_link: /es/
   title: Ingeniería
   description: Notas sobre software, sistemas y el oficio de construir cosas.
   hub_url: https://blog.fabiopereira.name/es/
@@ -31,6 +33,7 @@ es:
 pt:
   name: Português
   home: /pt/
+  home_link: /pt/
   title: Engenharia
   description: Notas sobre software, sistemas e a arte de construir coisas.
   hub_url: https://blog.fabiopereira.name/pt/
